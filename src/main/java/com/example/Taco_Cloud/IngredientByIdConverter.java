@@ -1,6 +1,7 @@
 package com.example.Taco_Cloud;
 
 
+import com.example.Taco_Cloud.model.Ingredient;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class IngredientByIdConverter implements Converter<String ,Ingredient> {
+public class IngredientByIdConverter implements Converter<String , Ingredient> {
     private Map<String ,Ingredient> ingredientMap = new HashMap<>();
 
     public IngredientByIdConverter() {
