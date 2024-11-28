@@ -1,13 +1,15 @@
-package com.example.Taco_Cloud;
+package com.example.Taco_Cloud.controller;
 
+import com.example.Taco_Cloud.model.Ingredient;
+import com.example.Taco_Cloud.model.Taco;
+import com.example.Taco_Cloud.model.TacoOrder;
 import jakarta.validation.Valid;
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-import com.example.Taco_Cloud.Ingredient.Type;
+import com.example.Taco_Cloud.model.Ingredient.Type;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
